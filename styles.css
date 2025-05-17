@@ -48,3 +48,19 @@ footer {
     padding: 1rem;
     background-color: #e9ecef;
 }
+
+.flex-container {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 1rem; /* Space between image and text */
+}
+
+.flex-image {
+  width: 150px; /* Set to your preferred size */
+  height: auto;
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+.flex-text {
+  flex: 1; /* Take up the remaining space */
+}
