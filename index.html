@@ -5,52 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theo Hembäck | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
-    <header>
-        <h1>Theo Hembäck</h1>
-        <p>Automotive Engineer | Machine Learning Enthusiast</p>
-    </header>
 
-    <section id="about">
-    <div class="flex-container">
-      <img src="assets/Capture.PNG" alt="My Photo">
-      <div class="flex-text">
-        <p>Hello! I'm Theo Hembäck, an engineer passionate about automotive testing, mechanical engineering and machine learning. Welcome to my portfolio!</p>
-      </div>
-    </div>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>UCL: Unsupervised Curriculum Learning for Medical Diagnosis, Scene Recognition and Historical Document Classification</h3>
-            <img src="assets/updated-UCL.png" alt="UCL Preview">
-            <p><b>Abstrct: </b>This thesis explores new applications of Unsupervised Curriculum Learning (UCL) across domains beyond the previously 
-                explored area of remote sensing imagery. UCL is a framework for training deep learning image classification models without needing 
-                labeled data. The framework consists of several components, including a convolutional neural network, a clustering algorithm and a 
-                selection operation. The machine learning techniques in these components interact to find meaningful patterns in the data. Some of the 
-                techniques and the interaction between them are explored further to improve the classification performance of the trained models. 
-                The updates to UCL investigated in this thesis include spectral clustering, outlier detection, and dimensionality reduction. 
-                These techniques increased the classification performance from 68% to 94% f1-score on a three-class subset of the CIFAR-10 dataset 
-                and from 68% to 75% on a five-class subset. When evaluating the updated UCL for medical diagnosis, scene recognition and historical 
-                document classification, the trained models reached f1-scores of 85%, 82% and 62% respectively, highlighting both strengths and
-                weaknesses of the methodology. The results show the viability of using UCL on a broader range of applications but also reveal some 
-                potential areas of improvement.</p>
-            <a href="https://www.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=1&af=%5B%5D&searchType=SIMPLE&sortOrder2=title_sort_asc&query=theo+hemb%C3%A4ck&language=en&pid=diva2%3A1906574&aq=%5B%5B%5D%5D&sf=undergraduate&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=9164">View Project</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: theohemback@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/TheoHem">TheoHem</a></p>
-    </section>
+  <header>
+      <h1>Theo Hembäck</h1>
+      <nav>
+          <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+          </ul>
+      </nav>
+      <!-- <p>Automotive Engineer | Machine Learning Enthusiast</p> -->
+  </header>
+    <main>
+        <section id="about">
+            <div class="flex-container">
+            <img src="assets/Capture.PNG" alt="My Photo">
+            <div class="flex-text">
+                <p>Hello! I'm Theo Hembäck, an engineer passionate about automotive testing, mechanical engineering and machine learning. 
+                    Welcome to my website.</p>
+            </div>
+            </div>
+        </section> 
+    </main>
 
     <footer>
-        <p>&copy; 2025 Theo Hembäck</p>
+        <h4>Contact</h4>
+        <p><a href="mailto:theohemback@gmail.com">TheoHemback@gmail.com</a> | <a href="https://github.com/TheoHem">GitHub</a> | <a href="https://www.linkedin.com/in/theo-hembäck-a8321b1b5">LinkedIn</a> </p>
     </footer>
-
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 </body>
 </html>

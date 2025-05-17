@@ -5,9 +5,24 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
+    min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  flex: 1; /* makes main content take up available space */
 }
 
 header {
+    min-height: 50px;
     background-color: #343a40;
     color: white;
     padding: 2rem 0;
@@ -44,6 +59,7 @@ a {
 }
 
 footer {
+    min-height: 50px;
     text-align: center;
     padding: 1rem;
     background-color: #e9ecef;
@@ -52,15 +68,62 @@ footer {
 .flex-container {
   display: flex;
   align-items: center; /* Vertically center items */
-  gap: 1rem; /* Space between image and text */
+  gap: 3rem; /* Space between image and text */
 }
 
 .flex-image {
   width: 150px; /* Set to your preferred size */
   height: auto;
-  border-radius: 8px; /* Optional rounded corners */
 }
 
 .flex-text {
   flex: 1; /* Take up the remaining space */
+}
+.flex-header {
+  flex: 1; /* Take up the remaining space */
+}
+.flex-container-header {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 1rem; /* Space between image and text */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#page-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+nav ul li a {
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a.active-link {
+  border-bottom: 2px solid #ffffff; /* or your preferred color */
 }
